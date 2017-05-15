@@ -40,3 +40,6 @@ else
     fi
 fi
 
+logger -s "Starting sync..."
+rsync -r $SOURCE_DIR/ $TARGET_DIR
+logger -s "...complete"
